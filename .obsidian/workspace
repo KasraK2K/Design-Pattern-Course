@@ -4,12 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "e9a9d7d0aca52102",
+        "id": "aa7ca52b50e24c63",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
-        }
+          "type": "markdown",
+          "state": {
+            "file": "Behavioral Design Patterns/Builder.md",
+            "mode": "source"
+          }
+        },
+        "group": "4724c75514eb05ce"
+      },
+      {
+        "id": "db085a9586735b68",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Behavioral Design Patterns/Builder.md",
+            "mode": "preview"
+          }
+        },
+        "group": "4724c75514eb05ce"
       }
     ],
     "direction": "vertical"
@@ -65,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Behavioral Design Patterns/Builder.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,6 +99,8 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e9a9d7d0aca52102",
-  "lastOpenFiles": []
+  "active": "aa7ca52b50e24c63",
+  "lastOpenFiles": [
+    "Behavioral Design Patterns/Builder.md"
+  ]
 }
