@@ -1,31 +1,18 @@
 {
   "main": {
-    "id": "b4a49af740e1ee5e",
+    "id": "00099b7cdd9c2b81",
     "type": "split",
     "children": [
       {
-        "id": "aa7ca52b50e24c63",
+        "id": "5a43b7203228b070",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Behavioral Design Patterns/Builder.md",
-            "mode": "source"
-          }
-        },
-        "group": "4724c75514eb05ce"
-      },
-      {
-        "id": "db085a9586735b68",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Behavioral Design Patterns/Builder.md",
+            "file": "Creational Design Patterns/Factory.md",
             "mode": "preview"
           }
-        },
-        "group": "4724c75514eb05ce"
+        }
       }
     ],
     "direction": "vertical"
@@ -81,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Behavioral Design Patterns/Builder.md",
+                "file": "Creational Design Patterns/Factory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,8 +86,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "aa7ca52b50e24c63",
+  "active": "5a43b7203228b070",
   "lastOpenFiles": [
+    "Creational Design Patterns/Factory.md",
     "Behavioral Design Patterns/Builder.md"
   ]
 }
