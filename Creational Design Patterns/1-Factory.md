@@ -1,4 +1,4 @@
-# Factory Method
+# Factory
 **Factory Method** is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 
 ![[factory_1.png]]
@@ -42,7 +42,7 @@ class Circle extends Painter {
 	}
 }
  
-class Squire extends Painter {
+class Square extends Painter {
 	draw() {
 		return '🟥'
 	}
@@ -51,7 +51,7 @@ class Squire extends Painter {
 const factoryPainter = (shapeName) => {
 	let shape;
 	if (shapeName === 'circle') shape = new Circle().draw();
-	else if (shapeName === 'square') shaoe = new Square().draw();
+	else if (shapeName === 'square') shape = new Square().draw();
 	console.log(shape);
 }
 
