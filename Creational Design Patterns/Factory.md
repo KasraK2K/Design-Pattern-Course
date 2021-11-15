@@ -30,20 +30,46 @@ interface ITruckLogistic extends ILogistic {
 	carType: number;
 }
 ```
+##### Implementation (Javascript)
+```javascript
+class Painter {
+	draw() {}
+}
 
-##### implementation
+class Circle extends Painter {
+	draw() {
+		return '🔴'
+	}
+}
+ 
+class Squire extends Painter {
+	draw() {
+		return '🟥'
+	}
+}
+
+const factoryPainter = (shapeName) => {
+	let shape;
+	if (shapeName === 'circle') shape = new Circle().draw();
+	else if (shapeName === 'square') shaoe = new Square().draw();
+	console.log(shape);
+}
+
+factoryPainter('circle');
+```
+
+##### implementation (Typescript)
 an implementation for error handling
 ```typescript
 interface IError {
 	statusCode: number
 	message: string
-	data: TErrorData
+	data?: TErrorData
 }
 
 type TErrorData = {
 	level: string
-	role: string
-	info?: Record<string, unknown>[]
+	role?: string
 }
 
 type TConstructor<T> = new (...args: any) => T
@@ -51,35 +77,34 @@ type TConstructor<T> = new (...args: any) => T
 class AppError implements IError {
 	statusCode: number
 	message: string
-	data: TErrorData
+	data?: TErrorData
 
 	constructor(error: IError) {
 		this.statusCode = error.statusCode
 		this.message = error.message
-		this.data = error.data
+		if (error.data) this.data = error.data
 	}
 
 	raiseError() {
-		throw {
+		const errObj: IError = {
 			statusCode: this.statusCode
-			, message: this.message
-			, data: this.data
+			,message: this.message
 		}
+		if (this.data) errObj.data = this.data
+		throw errObj
 	}
 }
 
 class CustomerLevelError extends AppError {
-
 	constructor(error: IError) {
-		error.data.level = "CUSTOMER"
+		error.data = { level: "CUSTOMER" }
 		super({ statusCode: error.statusCode, message: error.message, data: error.data })
 	}
 }
 
 class AdminLevelError extends AppError {
-
 	constructor(error: IError) {
-		error.data.level = "ADMIN"
+		error.data = { level: "ADMIN" }
 		super({ statusCode: error.statusCode, message: error.message, data: error.data })
 	}
 }
@@ -88,9 +113,8 @@ const errorFactory = <E extends AppError>(ct: TConstructor<E>, ...args: any): E 
 	return new ct(...args)
 }
 
-
 const adminError = errorFactory(AdminLevelError, { statusCode: 404, message: "NotFound!", data: { role: "Super-Admin" } })
-const customerError = errorFactory(CustomerLevelError, { statusCode: 404, message: "NotFound!", data: {} })
-const simpleError = errorFactory(AppError, { statusCode: 404, message: "NotFound!", data: {} })
-adminError.raiseError()
+const customerError = errorFactory(CustomerLevelError, { statusCode: 404, message: "NotFound!" })
+const simpleError = errorFactory(AppError, { statusCode: 404, message: "NotFound!" })
+simpleError.raiseError()
 ```

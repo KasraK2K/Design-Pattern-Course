@@ -10,9 +10,22 @@
           "type": "markdown",
           "state": {
             "file": "Creational Design Patterns/Factory.md",
+            "mode": "source"
+          }
+        },
+        "group": "885d210691fba1a0"
+      },
+      {
+        "id": "878ba4c55b157112",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Creational Design Patterns/Factory.md",
             "mode": "preview"
           }
-        }
+        },
+        "group": "885d210691fba1a0"
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5a43b7203228b070",
+  "active": "878ba4c55b157112",
   "lastOpenFiles": [
     "Creational Design Patterns/Factory.md",
     "Behavioral Design Patterns/Builder.md"
