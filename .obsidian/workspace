@@ -7,11 +7,8 @@
         "id": "5a43b7203228b070",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Creational Design Patterns/2-Abstract Factory.md",
-            "mode": "source"
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "0f28221e77ad3c49"
       },
@@ -21,7 +18,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Creational Design Patterns/2-Abstract Factory.md",
+            "file": "The Catalog of Design Patterns.md",
             "mode": "preview"
           }
         },
@@ -81,7 +78,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Creational Design Patterns/2-Abstract Factory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,10 +95,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c05ed7a718d9d64b",
+  "active": "5a43b7203228b070",
   "lastOpenFiles": [
-    "Creational Design Patterns/2-Abstract Factory.md",
-    "Creational Design Patterns/1-Factory.md",
-    "Behavioral Design Patterns/Builder.md"
+    "The Catalog of Design Patterns.md",
+    "Creational Design Patterns/Builder.md",
+    "Creational Design Patterns/Abstract Factory.md",
+    "Creational Design Patterns/Factory Method.md",
+    "Images/factory_2.png"
   ]
 }
